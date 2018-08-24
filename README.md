@@ -5,7 +5,7 @@ My programming approach has always been to been to use the right tools to create
 This image was generated using [Pixku](https://github.com/MuvikLabs/Pixku) and [Runt](https://github.com/MuvikLabs/runt), by [MuvikLabs](https://github.com/MuvikLabs).
 
 
-![alt text](https://github.com/imABEING/Neon_Collage/blob/master/out.png)
+![alt text](https://github.com/imABEING/Neon_Collage_2/blob/master/NeonCollage.png)
 
 
 ## Creative Process
