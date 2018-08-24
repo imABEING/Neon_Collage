@@ -44,29 +44,20 @@ int main(int argc, char *argv[])
     FILE *fp;
     int x, y, z, c;
     
-
     fp = fopen("run.rnt", "w");
+    fprintf(fp, "# generated image using NeonCollage program\n");
 
-    fprintf(fp, "# generated image using collage10 program\n");
-
-    
-    for(x = 0; x < 8; x++) {
-        for(y = 0; y < 8; y++) {
+    for(x = 0; x < 8; x++) 
+    {
+        for(y = 0; y < 8; y++) 
+        {
+            c  = rand() % (MAX_NUM + 1 - MIN_NUM) + MIN_NUM;   
+            triangle(fp, x * 32, y * 32, 32, 32, c);
             c  = rand() % (MAX_NUM + 1 - MIN_NUM) + MIN_NUM;
-            
-        triangle(fp, x * 32, y * 32, 32, 32, c);
-            
-        c  = rand() % (MAX_NUM + 1 - MIN_NUM) + MIN_NUM;
-        
-        square(fp, x * 32, y * 32, 6, 6, c);
-            
-            
-
-    }
-    }
+            square(fp, x * 32, y * 32, 6, 6, c);         
+        }
+    }  
     
-    
-     
     fprintf(fp, "\"NeonCollage.png\" pxsave\n");
     fclose(fp);
     return 0;
